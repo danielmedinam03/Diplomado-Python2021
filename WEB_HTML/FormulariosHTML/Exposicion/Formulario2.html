@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css"/>
+    <script type="text/javascript" src="guardar_textarea.js"></script>
+
+    <!-- <link rel="stylesheet" href="cssv/fontello.css"> -->
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div >
+        <section >
+        <form action="" >
+            <h1>FORMULARIO COVID-19:</h1>
+            <div class="field">
+            <p>
+                <b>Nombre:</b> <input type="text" name="nombres" id="nombres">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Apellido:</b> <input type="text" name="apellidos" id="apellidos">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Tipo de documento:</b> 
+                <select name="document" id="document">
+                    <option>Cedula de ciudadania</option>
+                    <option>Tarjeta de identidad</option>
+                    <option>Registro civil</option>
+                    <option>Cedula de extranjeria</option>
+                </select>
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Numero de documento:</b> <input type="text" name="num_doc" id="num_doc">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>email:</b> <input type="text" placeholder="example@formulario.com" name="correo" id="correo">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Pais:</b>
+                <select name="pais" id="pais">
+                    <option >Colombia</option>
+                    <option >Estados Unidos</option>
+                    <option >Canada</option>
+                    <option >Suiza</option>
+                </select>
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Dpto:</b>
+                <select name="dpto" id="dpto">
+                    <option >Tolima</option>
+                    <option >Cundinamarca</option>
+                    <option >Boyaca</option>
+                    <option >Antiquia</option>
+                </select>
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Ciudad:</b>
+                <select name="ciudad" id="ciudad">
+                    <option >Ibague</option>
+                    <option >San juan de la china</option>
+                    <option>Libano</option>
+                    <option >Murillo</option>
+                </select>
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Genero:</b> <br>
+                
+                Masculino<input type="radio" id="genero" name="genero" id="genero"><br>
+                Femenino<input type="radio" id="genero" name="genero" id="genero"><br>
+                Otro<input type="radio" id="genero" name="genero" id="genero">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>Has tenido Covid en los ultimo tres meses?:</b> <br>
+                Si<input type="radio" id="covid" name="covid"><br>
+                No<input type="radio" id="covid" name="covid"><br>
+                Tal vez<input type="radio" id="covid" name="covid">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <b>se encuentra vacunado?:</b> <br>
+                Si<input type="radio" id="vacunado" name="vacunado"><br>
+                No<input type="radio" id="vacunado" name="vacunado"><br>
+                A medias<input type="radio" id="vacunado" name="vacunado">
+            </p>
+            </div>
+            <div class="field">
+            <p>
+                <section >
+                    <b>Tipo de vacuna:</b> <br>
+                    Pfizer<input type="radio" value="pfizer" name="vacuna"><br>
+                    Moderna<input type="radio" value="moderna" name="vacuna"><br>
+                    AstraZeneca <input type="radio" value="astrazeneca" name="astrazeneca"><br>
+                    Sinovac<input type="radio"  name="vacuna">
+                </section>
+            </p>
+            </div>
+            <div class="field" >
+            <p>
+                <b>Vehiculo:</b> <br>
+                <section id="vehiculo">
+                    <input type="checkbox" value="Moto" > Moto <br>
+                    <input type="checkbox" > Camioneta <br>
+                    <input type="checkbox" > Carro <br>
+                    <input type="checkbox" > cicla <br>
+                    <input type="checkbox" > a pie <br>
+                </section>
+            </p>
+            </div>
+            <div class="field">
+        
+                <p><b>Numero de familiares que viven con usted :</b></p>
+                <input type="number" name="fami" id="fami">
+            
+            </section>
+            </div>
+            <div class="field"></div>
+            <p class="observacion">
+                Observaciones: <br>
+                <textarea name="mensaje" id="obs" cols="80" rows="10"></textarea>
+            </p>
+            </div>
+            <div class="submit">
+                <button onclick="saveTextAsFile()">ENVIAR</button>
+            </div>
+
+
+
+        </form>
+        </section>
+    </div>
+    
+</body>
+</html>
